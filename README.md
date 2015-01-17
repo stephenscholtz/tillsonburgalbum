@@ -1,2 +1,2 @@
 # tillsonburgalbum
-A repo to learn git.
+A repo to learn git and github.
