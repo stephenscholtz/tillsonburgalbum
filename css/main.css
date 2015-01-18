@@ -21,11 +21,22 @@ body {
   background:url("../img/bkgrnd.jpg") no-repeat top center;
   margin-bottom: 1em;
 }
+.browsehappy {
+  /* max-width: 1000px; */
+  text-align: center;
+  padding: 1em;
+  background-color: #fef8b4;
+  border-bottom: 1px dashed #333;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
 .site-body-column {
   /*border: 1px solid #f00;*/
   max-width: 1000px;
-  margin: 2em auto;
+  margin: 0em auto;  
 }
+
 .site-body-intro {
   margin: 8.5em auto 2em;
 }
@@ -34,43 +45,42 @@ body {
     margin-top: 5em;
   }
 }
-
+.quotes-wrap {
+  background-color: #e7e7e7;
+}
+.site-body-quotes {
+  margin-top: 3em;
+  padding: 1em 2em 0;
+}
+.author-wrap {
+  background-color: #002e62;
+}
 .site-body-author-bio {
   background-color: #002e62;
   padding: 0 2em 1em;
 }
-.author-pic-img {
-  width: 40%;
-  max-width: 260px;
-  margin: 0 0 1em 1em;
-}
-.author-bio {
-  color: #fff;
-}
+
 
 
 
 
 /** GENERIC **/
-h1, h2 {
+h1, h2, .h2 {
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
   color: #002e62;
   /*font-weight: bold;*/
   font-weight: normal;
   font-family: 'Libre Baskerville','Arial',serif;
 }
-h2 {
+h2, .h2 {
   margin: 0 0 1em;
 }
 @media (max-width: 767px ) {
-  h1 {font-size: 30px;}
-  h2 {font-size: 24px;}
+  h1 {font-size: 30px;line-height: 36px;}
+  h2, .h2 {font-size: 24px;}
 }
 
 
-.author-bio h1 {
-  color: #fff;
-}
 
 
 
@@ -81,7 +91,6 @@ h2 {
   width: 100%;
   margin-bottom: 1em;
 }
-
 .book-title {
   margin-top: 1em;
 }
@@ -90,7 +99,6 @@ h2 {
     margin-top: 0;
   }
 }
-
 @media (min-width: 768px) and (max-width: 991px) {
   .book-chapter-list ul {
     -ms-column-count: 2;
@@ -99,10 +107,64 @@ h2 {
     column-count: 2;
   }
 }
-
 .dl-order-form {
   text-align: center;
 }
+
+
+
+/* Quotes */
+.cbp-qtrotator {
+  position: relative;
+  min-height: 400px;
+}
+.site-body-quotes blockquote {
+  border: 0;
+  font-size: 2em;
+}
+@media (max-width: 991px ) {
+  .site-body-quotes blockquote {
+    font-size: 1.25em;
+  }
+}
+.cbp-qtrotator .cbp-qtcontent {
+    position: absolute;
+    min-height: 200px;
+    padding: 3em 3em;
+    top: 0;
+    z-index: 0;
+    opacity: 0;
+    width: 100%;
+}
+@media (max-width: 991px ) {
+  .cbp-qtrotator .cbp-qtcontent {
+    padding: 1em 0em;
+  }
+}
+.cbp-qtrotator .cbp-qtcontent.cbp-qtcurrent,
+.no-js .cbp-qtrotator .cbp-qtcontent {
+    position: relative; 
+    z-index: 100;
+    pointer-events: auto;
+    opacity: 1;
+}
+
+
+.author-pic-img {
+  width: 40%;
+  max-width: 260px;
+  margin: 0 0 1em 1em;
+}
+.author-bio {
+  color: #fff;
+}
+.author-bio h1 {
+  color: #fff;
+}
+
+
+
+
 
 
 @media (max-width: 767px) {
