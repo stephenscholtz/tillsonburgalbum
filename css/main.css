@@ -8,7 +8,7 @@ body {
 
 /* @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700|Libre+Baskerville:400,700); */
 
-/*@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic);*/
+/* @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic);*/
 /* @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic|EB+Garamond); */
 
 
@@ -21,16 +21,33 @@ body {
   background:url("../img/temp_bkgrnd.jpg") no-repeat top center;
   margin-bottom: 1em;
 }
-.site-body {
+.site-body-column {
   /*border: 1px solid #f00;*/
   max-width: 1000px;
-  margin:8.5em auto 2em;
+  margin: 2em auto;
+}
+.site-body-intro {
+  margin: 8.5em auto 2em;
 }
 @media (max-width: 767px ) {
-  .site-body {
+  .site-body-intro {
     margin-top: 5em;
   }
 }
+
+.site-body-author-bio {
+  background-color: #002e62;
+  padding: 0 2em 1em;
+}
+.author-pic-img {
+  width: 40%;
+  max-width: 260px;
+  margin: 0 0 1em 1em;
+}
+.author-bio {
+  color: #fff;
+}
+
 
 
 
@@ -51,10 +68,10 @@ h2 {
 }
 
 
-
-div {
-  /*border: 1px solid #f00;*/
+.author-bio h1 {
+  color: #fff;
 }
+
 
 
 
