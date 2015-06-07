@@ -1,5 +1,8 @@
-// Avoid `console` errors in browsers that lack a console.
-(function() {
+;(function() {
+    // Better errors
+    "use strict";
+    
+    // Avoid `console` errors in browsers that lack a console.
     var method;
     var noop = function () {};
     var methods = [
@@ -24,6 +27,9 @@
 // Place any jQuery/helper plugins in here.
 $(document).ready(function() {
     (function() {
+        // Media Query helper for javascript
+        var MQ = window.getComputedStyle(document.querySelector('body'), '::before').getPropertyValue('content').replace(/"/g, "");
+        // Quotes rotation
         $(".cbp-qtrotator").cbpQTRotator({interval: 7000});
     })();
 

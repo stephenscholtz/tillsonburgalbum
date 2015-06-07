@@ -6,8 +6,29 @@ body {
   font-size: 100%; /* Browsers implement 16px be default */
 }
 
-/* @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700|Libre+Baskerville:400,700); */
+body::before {
+  /*
+  never visible - this is used in jQuery to check the current MQ
+  var MQ = window.getComputedStyle(document.querySelector('body'), '::before').getPropertyValue('content').replace(/"/g, "");
+   */
+  content: 'mobile';
+  display: none;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  body::before {
+    /* never visible - this is used in jQuery to check the current MQ */
+    content: 'tablet';
+    display: none;
+  }
+}
+@media only screen and (min-width: 992px) {
+  body::before {
+    /* never visible - this is used in jQuery to check the current MQ */
+    content: 'desktop';
+  }
+}
 
+/* @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700|Libre+Baskerville:400,700); */
 /* @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic);*/
 /* @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic|EB+Garamond); */
 
@@ -36,6 +57,7 @@ body {
   max-width: 1000px;
   margin: 0em auto;  
 }
+
 
 .site-body-intro {
   margin: 8.5em auto 2em;
@@ -154,6 +176,7 @@ h2, .h2 {
   width: 40%;
   max-width: 260px;
   margin: 0 0 1em 1em;
+  float: right;
 }
 .author-bio {
   color: #fff;
