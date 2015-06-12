@@ -41,6 +41,9 @@
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700|Libre+Baskerville:400,700' rel='stylesheet' type='text/css'>
 		<link href="css/main.css" rel="stylesheet" />
         <script src="vendor/modernizr/modernizr.custom.28540.js"></script>
+		<link rel="stylesheet" href="js/vendor/photoswipe/photoswipe.css"> 
+		<link rel="stylesheet" href="js/vendor/photoswipe/default-skin/default-skin.css"> 
+
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -103,7 +106,121 @@
 				</div>
 			</div>
 		</div>
+		<section class="gallery-wrap">
+			<div class="site-body-column site-body-media container">
+				<div class="row">
+					<h1 class="site-body-gallery-h1">Gallery</h1>
 
+					<div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+					    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+					        <a href="img/gallery/DIT-Harris-Mens-Wear.jpg" itemprop="contentUrl" data-size="1200x620">
+					            <img src="img/gallery/DIT-Harris-Mens-Wear-sm.jpg" itemprop="thumbnail" alt="Harris Men's Wear" class="my-gallery-thumb"/>
+					        </a>
+					        <figcaption itemprop="caption description">Harris Men's Wear</figcaption>
+					    </figure>
+					    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+					        <a href="img/gallery/DIT-Esso-Station.jpg" itemprop="contentUrl" data-size="1200x503">
+					            <img src="img/gallery/DIT-Esso-Station-sm.jpg" itemprop="thumbnail" alt="Broadway and Oxford streets, circa 1955" class="my-gallery-thumb"/>
+					        </a>
+					        <figcaption itemprop="caption description">Broadway and Oxford streets, circa 1955</figcaption>
+					    </figure>
+					    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+					        <a href="img/gallery/DIT-Davidson-Appliances.jpg" itemprop="contentUrl" data-size="1200x503">
+					            <img src="img/gallery/DIT-Davidson-Appliances-sm.jpg" itemprop="thumbnail" alt="Davidson Appliances" class="my-gallery-thumb"/>
+					        </a>
+					        <figcaption itemprop="caption description">Davidson Appliances</figcaption>
+					    </figure>
+						<div class="clearfix visible-lg-block visible-md-block"></div>
+					    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+					        <a href="img/gallery/DIT-AandP.jpg" itemprop="contentUrl" data-size="1200x505">
+					            <img src="img/gallery/DIT-AandP-sm.jpg" itemprop="thumbnail" alt="A &amp; P" class="my-gallery-thumb"/>
+					        </a>
+					        <figcaption itemprop="caption description">A &amp; P</figcaption>
+					    </figure>
+					    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+					        <a href="img/gallery/DIT-Capitol-Theatre.jpg" itemprop="contentUrl" data-size="1200x474">
+					            <img src="img/gallery/DIT-Capitol-Theatre-sm.jpg" itemprop="thumbnail" alt="Capitol Theatre" class="my-gallery-thumb"/>
+					        </a>
+					        <figcaption itemprop="caption description">Capitol Theatre</figcaption>
+					    </figure>
+					    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+					        <a href="img/gallery/DIT-Heaths.jpg" itemprop="contentUrl" data-size="1200x564">
+					            <img src="img/gallery/DIT-Heaths-sm.jpg" itemprop="thumbnail" alt="Heath's Department Store" class="my-gallery-thumb"/>
+					        </a>
+					        <figcaption itemprop="caption description">Heath's Department Store</figcaption>
+					    </figure>
+						<div class="clearfix visible-lg-block visible-md-block"></div>
+					    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+					        <a href="img/gallery/DIT-Little-girl-c.2-Use-Full-Page.jpg" itemprop="contentUrl" data-size="1200x953">
+					            <img src="img/gallery/DIT-Little-girl-c.2-Use-Full-Page-sm.jpg" itemprop="thumbnail" alt="Broadway and Ridout, view north" class="my-gallery-thumb"/>
+					        </a>
+					        <figcaption itemprop="caption description">Broadway and Ridout, view north</figcaption>
+					    </figure>
+					    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+					        <a href="img/gallery/DIT-Royal-Bank.jpg" itemprop="contentUrl" data-size="1200x596">
+					            <img src="img/gallery/DIT-Royal-Bank-sm.jpg" itemprop="thumbnail" alt="Royal Bank" class="my-gallery-thumb"/>
+					        </a>
+					        <figcaption itemprop="caption description">Royal Bank</figcaption>
+					    </figure>
+					    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+					        <a href="img/gallery/DIT-Shoe-Factory.jpg" itemprop="contentUrl" data-size="1200x621">
+					            <img src="img/gallery/DIT-Shoe-Factory-sm.jpg" itemprop="thumbnail" alt="Shoe Factory" class="my-gallery-thumb"/>
+					        </a>
+					        <figcaption itemprop="caption description">Shoe Factory</figcaption>
+					    </figure>
+						<div class="clearfix visible-lg-block visible-md-block"></div>
+					    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+					        <a href="img/gallery/DIT-Woolworths.jpg" itemprop="contentUrl" data-size="1200x501">
+					            <img src="img/gallery/DIT-Woolworths-sm.jpg" itemprop="thumbnail" alt="Woolworths" class="my-gallery-thumb"/>
+					        </a>
+					        <figcaption itemprop="caption description">Woolworths</figcaption>
+					    </figure>
+					    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+					        <a href="img/gallery/Aerial-2.jpg" itemprop="contentUrl" data-size="1000x795">
+					            <img src="img/gallery/Aerial-2-sm.jpg" itemprop="thumbnail" alt="Aerial view, circa 1950" class="my-gallery-thumb"/>
+					        </a>
+					        <figcaption itemprop="caption description">Aerial view, circa 1950</figcaption>
+					    </figure>
+					    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+					        <a href="img/gallery/Postcard-29.jpg" itemprop="contentUrl" data-size="1200x802">
+					            <img src="img/gallery/Postcard-29-sm.jpg" itemprop="thumbnail" alt="Rolph Street School, to close June 2015" class="my-gallery-thumb"/>
+					        </a>
+					        <figcaption itemprop="caption description">Rolph Street School, to close June 2015</figcaption>
+					    </figure>
+						<div class="clearfix visible-lg-block visible-md-block"></div>
+					    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+					        <a href="img/gallery/ET-Pound-John.jpg" itemprop="contentUrl" data-size="730x900">
+					            <img src="img/gallery/ET-Pound-John-sm.jpg" itemprop="thumbnail" alt="John Pound, who lent his name to John Pound Road, which led to his farm in the late 19th century" class="my-gallery-thumb"/>
+					        </a>
+					        <figcaption itemprop="caption description">John Pound, who lent his name to John Pound Road</figcaption>
+					    </figure>
+					    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+					        <a href="img/gallery/ET-Tillsonburg-Spa.jpg" itemprop="contentUrl" data-size="1200x859">
+					            <img src="img/gallery/ET-Tillsonburg-Spa-sm.jpg" itemprop="thumbnail" alt="Mid-nineteenth century, Oxford and London streets, where the sulfur water was considered healthy" class="my-gallery-thumb"/>
+					        </a>
+					        <figcaption itemprop="caption description">Mid-nineteenth century, Oxford and London streets</figcaption>
+					    </figure>
+					</div>
+
+
+
+
+				</div>
+			</div>
+		</section>
+		<section class="media-wrap">
+			<div class="site-body-column site-body-media container">
+				<div class="row">
+					<h1 class="site-body-media-h1">In the media...</h1>
+					<ul>
+						<li><a href="http://www.rogerstv.com/page.aspx?rid=11&pag=3&lid=237&gid=216369">Matt Scholtz Book Launches</a> - Rogers Cable TV, Oct 3 2014</li>
+						<li><a href="http://www.tillsonburgnews.com/2014/09/12/the-world-is-a-stage">The World is a Stage</a> - Laurel Beechey, Tillsonburg News, Sept 12 2014</li>
+						<li><a href="http://www.rogerstv.com/page.aspx?lid=237&rid=11&gid=126641">Tillsonburg History Book</a> - Rogers Cable TV, June 24, 2014</li>
+						<li>"<a href="http://www.tillsonburgnews.com/2014/01/21/no-scholtz-hashtag---but-another-historical-book">No Scholtz hashtag, but another historical book</a>" - Tillsonburg News, Jan 21 2014</li>
+					</ul>
+				</div>
+			</div>
+		</section>
 		<section class="quotes-wrap">
 			<div class="site-body-column site-body-quotes container">
 				<div class="row">
@@ -111,11 +228,16 @@
 					<h1 class="site-body-quotes-h1">What people are saying about Tillsonburg Album...</h1>
 					<div class="site-body-quote-rotator cbp-qtrotator">
 						<!-- TODO: convert to list? -->
-						<!-- TODO: randomize starting quote -->
 					    <div class="cbp-qtcontent">
 					        <blockquote>
 					          <p>Hi Matt, I just purchased a copy of your book. It is fantastic, brings back alot of fond memories of growing up in Tillsonburg. Thanks so much for including my Mom, photo of telephone operators, I really appreciate it.</p>
 					        </blockquote>
+					    </div>
+					    <div class="cbp-qtcontent">
+					    	<blockquote>
+					    		<p>When my husband Peter looked at it, he found it brought back a multitude of memories. I even spotted a picture of Peter, in 1978 in has hardhat and tree climbing spurs, dropping the cable lines while a house was moved from downtown!</p>
+					    		<footer>Laurel Beechey - <a href="http://www.tillsonburgnews.com/2014/09/12/the-world-is-a-stage">The World is a Stage</a> Column, Tilsonburg News</footer>
+					    	</blockquote>
 					    </div>
 					    <div class="cbp-qtcontent">
 					        <blockquote>
@@ -131,6 +253,11 @@
 					    <div class="cbp-qtcontent">
 					        <blockquote>
 					          <p>Any time that you are down town, I would appreciate it if you could drop the book off for me. I had a chance to scan one briefly and I was impressed. Today, a little girl in Grade 4 told me she had seen my picture 3 times.</p>
+					        </blockquote>
+					    </div>
+						<div class="cbp-qtcontent">
+					        <blockquote>
+					          <p>I'd love to shake the man's hand. I only lived in Tillsonburg for four years, but it's still the most interesting place I knew for many reasons.</p>
 					        </blockquote>
 					    </div>
 					    <div class="cbp-qtcontent">
@@ -212,13 +339,57 @@
 		</section>
 		
 
+<!-- PhotoSwipe UI -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="pswp__bg"></div>
+    <div class="pswp__scroll-wrap">
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+				<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+				<div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END PhotoSwipe UI -->
+
+
+
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
-		<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-		<script src="js/vendor/jquery.cbpQTRotator-v1.0.js"></script>
-		<script src="js/main.js"></script>
+		<script src="vendor/bootstrap/js/bootstrap.min.js" defer></script>
+		<script src="js/vendor/jquery.cbpQTRotator-v1.0.js" defer></script>
+		<script src="js/vendor/photoswipe/photoswipe.js"></script> 
+		<script src="js/vendor/photoswipe/photoswipe-ui-default.min.js"></script> 
+		<script src="js/main.js" defer></script>
 
 
         <!-- <script src="js/main.js"></script> -->
